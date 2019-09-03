@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'WisdomScriptAJ';
+    src: url('fonts/WisdomScriptAJ.eot');
+    src: url('fonts/WisdomScriptAJ.woff2') format('woff2'),
+    url('fonts/WisdomScriptAJ.woff') format('woff');
+}
+@font-face {
+    font-family: '3950';
+    src: url('fonts/3950.eot');
+    src: url('fonts/3950.woff2') format('woff2'),
+    url('fonts/3950.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    max-width: 940px;
+    width: 100%;
+    margin: 44px auto 120px;
+}
+.logo{
+    font-family: 'WisdomScriptAJ', sans-serif;
+    color: #fed136;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 41px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    filter: drop-shadow( 0 0 9px #fccb45)
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-menu{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.navigation-menu-link{
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.navigation-menu-link:hover{
+    color: #fed136;
+}
+.our-services{
+    text-align: center;
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-heading{
+    color: #222222;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.section-heading-title{
+    color: #777777;
+    font-size: 16px;
+    font-style: italic;
+    font-family: '3950', sans-serif;
+    margin-bottom: 80px;
+}
+.section-items-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.section-item{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    width: 68px;
+    align-self: center;
+    height: 67px;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 28px;
+}
+.circle::before{
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.basket::before{
+    width: 40px;
+    height: 39px;
+    background-image: url("img/Icon-Basket.png");
+}
+.laptop::before{
+    width: 41px;
+    height: 35px;
+    background-image: url("img/Icon-Laptop.png");
+}
+.lock::before{
+    width: 29px;
+    height: 38px;
+    background-image: url("img/Icon-Locked.png");
+}
+.item-heading{
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+    margin-bottom: 18px;
+}
+.item-about{
+    line-height: 25px;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+.contact-us{
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #222222;
+    width: 100%;
+    padding-top: 110px;
+    height: 676px;
+}
+.contact-us>.section-heading{
+    color: #ffffff;
+}
+.map{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width: 614px;
+    height: 537px;
+    opacity: 0.3;
+    background-image: url("img/Map_image.png");
+    background-repeat: no-repeat;
+}
+form{
+    position:relative;
+    width: 940px;
+    height: 306px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+input{
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+::placeholder{
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px
+}
+textarea {
+    width: 455px;
+    height: 210px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 20px 0px 0px 20px;
+}
+button{
+    position: absolute;
+    bottom: 0;
+    border:0;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 66px;
+    background-color: #fed136;
+    color: #ffffff;
+    font-family:'Montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    filter: drop-shadow( 0 0 15px #fccb45)
+}
+:valid:focus:required{
+    outline: 2px solid green;
+}
+:invalid:focus:required{
+    outline: 2px solid  red;
+}
