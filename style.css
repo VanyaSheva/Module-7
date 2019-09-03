@@ -206,6 +206,7 @@ button{
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.3s ease-in;
+    cursor: pointer;
 }
 button:hover{
     filter: drop-shadow( 0 0 15px #fccb45)
