@@ -1,12 +1,10 @@
 @font-face {
     font-family: 'WisdomScriptAJ';
-    src: url('fonts/WisdomScriptAJ.eot');
     src: url('fonts/WisdomScriptAJ.woff2') format('woff2'),
     url('fonts/WisdomScriptAJ.woff') format('woff');
 }
 @font-face {
     font-family: '3950';
-    src: url('fonts/3950.eot');
     src: url('fonts/3950.woff2') format('woff2'),
     url('fonts/3950.woff') format('woff');
 }
