@@ -151,7 +151,7 @@ header{
 .map{
     position: absolute;
     right:0;
-    bottom: 0;
+    bottom: 20px;
     width: 614px;
     height: 537px;
     opacity: 0.3;
